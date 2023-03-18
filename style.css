@@ -65,14 +65,17 @@ nav {
 }
 
 nav a {
-  color: #FFFFFF; /* Changed to white */
-  padding: 0.5rem;
-  transition: background 0.3s ease;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem; /* Added extra padding to the sides */
+  border-radius: 20px; /* Added rounded edges */
+  transition: background 0.3s ease, color 0.3s ease; /* Updated transition */
 }
 
 nav a:hover {
   background: #4a4a4a;
+  color: #FFFFFF; /* Added color transition */
 }
+
 
 /* Main content */
 main {
