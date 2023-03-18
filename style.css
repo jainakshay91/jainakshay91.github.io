@@ -142,9 +142,10 @@ footer a:hover {
     background: #0082CA;
   }
 
-  nav input#nav-toggle:checked ~ ul.nav-links {
-    display: flex;
-  }
+  nav input#nav-toggle:checked ~ .nav-links {
+  display: flex;
+}
+
 
   nav label.nav-toggle-label {
     display: block;
