@@ -9,8 +9,8 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  color: #000000; /* Changed to black */
-  background-color: #FFFFFF; /* Changed to white */
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -30,7 +30,7 @@ p {
 }
 
 a {
-  color: #000000; /* Changed to black */
+  color: #000000;
   text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ a:hover {
 
 /* Header */
 header {
-  background: #FFFFFF; /* Changed to white */
+  background: #FFFFFF;
   padding: 1rem 0;
   text-align: center;
 }
@@ -50,13 +50,13 @@ header h1 {
 }
 
 header h2 {
-  color: #000000; /* Changed to black */
+  color: #000000;
   margin-top: -0.5rem;
 }
 
 /* Navigation */
 nav {
-  background: #0082CA; /* Changed to Nokia Bell Labs blue color */
+  background: #0082CA;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -66,16 +66,15 @@ nav {
 
 nav a {
   color: #FFFFFF;
-  padding: 0.5rem 1rem; /* Added extra padding to the sides */
-  border-radius: 20px; /* Added rounded edges */
-  transition: background 0.3s ease, color 0.3s ease; /* Updated transition */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   background: #4a4a4a;
-  color: #FFFFFF; /* Added color transition */
+  color: #FFFFFF;
 }
-
 
 /* Main content */
 main {
@@ -84,17 +83,35 @@ main {
 
 /* Footer */
 footer {
-  background: #FFFFFF; /* Changed to white */
+  background: #FFFFFF;
   padding: 1rem 0;
   text-align: center;
 }
 
 footer a {
-  color: #000000; /* Changed to black */
+  color: #000000;
 }
 
 footer a:hover {
   color: #666;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #000000;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0082CA;
 }
 
 /* Media queries for responsiveness */
