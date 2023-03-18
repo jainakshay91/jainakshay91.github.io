@@ -139,7 +139,11 @@ footer a:hover {
     top: 100%;
     left: 0;
     right: 0;
-    background: #0082CA;
+    background: #fff;
+  }
+
+  nav ul.nav-links li a {
+    background: #333;
   }
 
   nav input#nav-toggle:checked ~ .nav-links {
@@ -159,7 +163,7 @@ footer a:hover {
   nav label.nav-toggle-label span::after {
     content: "";
     display: block;
-    background: #FFF;
+    background: #000;
     height: 2px;
     width: 24px;
     border-radius: 2px;
@@ -178,4 +182,3 @@ footer a:hover {
     bottom: -8px;
   }
 }
-
