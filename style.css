@@ -160,34 +160,42 @@ footer a:hover {
     background-color: #4A4A4A;
   }
 
-  nav input#nav-toggle:checked ~ .nav-links {
-    display: flex;
-  }
+ nav input#nav-toggle:checked ~ .nav-links {
+  display: flex;
+}
 
-  nav label.nav-toggle-label {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
+nav label.nav-toggle-label {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
 
-  nav label.nav-toggle-label span,
-  nav label.nav-toggle-label span::before,
-  nav label.nav-toggle-label span::after {
-    content: "";
-    display: block;
-    background-color: #000000;
-    height: 2px;
-    width: 24px;
-    border-radius: 2px;
-  }
+nav label.nav-toggle-label span {
+  content: "";
+  display: block;
+  background-color: #000000;
+  height: 3px;
+  width: 24px;
+  border-radius: 2px;
+}
 
-  nav label.nav-toggle-label span::before {
-    top: -8px;
-  }
+nav label.nav-toggle-label span::before,
+nav label.nav-toggle-label span::after {
+  content: "";
+  display: block;
+  background-color: #000000;
+  height: 3px;
+  width: 24px;
+  border-radius: 2px;
+  position: absolute;
+}
 
-  nav label.nav-toggle-label span::after {
-    bottom: -8px;
-  }
+nav label.nav-toggle-label span::before {
+  top: -8px;
+}
+
+nav label.nav-toggle-label span::after {
+  bottom: -8px;
 }
