@@ -56,6 +56,10 @@ header h2 {
 
 /* Navigation */
 nav {
+  position: relative;
+}
+
+nav ul.nav-links {
   background: #0082CA;
   display: flex;
   justify-content: space-around;
@@ -64,14 +68,26 @@ nav {
   margin-bottom: 2rem;
 }
 
-nav a {
+nav input#nav-toggle {
+  display: none;
+}
+
+nav label.nav-toggle-label {
+  display: none;
+}
+
+nav ul.nav-links li {
+  list-style-type: none;
+}
+
+nav ul.nav-links a {
   color: #FFFFFF;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover {
+nav ul.nav-links a:hover {
   background: #4a4a4a;
   color: #FFFFFF;
 }
@@ -114,35 +130,52 @@ footer a:hover {
   color: #0082CA;
 }
 
-/* Media queries for responsiveness */
+/* Mobile navigation */
 @media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #0082CA;
   }
 
-  nav a {
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 1rem;
+  nav input#nav-toggle:checked ~ ul.nav-links {
+    display: flex;
   }
 
-  h1 {
-    font-size: 36px;
+  nav label.nav-toggle-label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
-  h2 {
-    font-size: 28px;
+  nav label.nav-toggle-label span,
+  nav label.nav-toggle-label span::before,
+  nav label.nav-toggle-label span::after {
+    content: "";
+    display: block;
+    background: #FFF;
+    height: 2px;
+    width: 24px;
+    border-radius: 2px;
   }
 
-  h3 {
-    font-size: 24px;
+  nav label.nav-toggle-label span::before,
+  nav label.nav-toggle-label span::after {
+    position: absolute;
   }
 
-  body {
-    font-size: 16px;
+  nav label.nav-toggle-label span::before {
+    top: -8px;
   }
 
-  .social-icons a {
-    font-size: 20px;
+  nav label.nav-toggle-label span::after {
+    bottom: -8px;
   }
 }
+
