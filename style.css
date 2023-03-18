@@ -143,9 +143,8 @@ footer a:hover {
   }
 
   nav input#nav-toggle:checked ~ .nav-links {
-  display: flex;
-}
-
+    display: flex;
+  }
 
   nav label.nav-toggle-label {
     display: block;
